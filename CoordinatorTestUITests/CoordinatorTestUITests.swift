@@ -7,8 +7,13 @@
 //
 
 import XCTest
+import UIKit
 
 class CoordinatorTestUITests: XCTestCase {
+    
+    var mainCoordinator : MainCoordinator?
+    var window: UIWindow?
+
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -20,8 +25,20 @@ class CoordinatorTestUITests: XCTestCase {
         XCUIApplication().launch()
 
         // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+//        setUpVc()
+        
     }
 
+//    func setUpVc() {
+//        let navController = UINavigationController()
+//        mainCoordinator = MainCoordinator(navigationController: navController)
+//        mainCoordinator?.start()
+//        
+//        window = UIWindow(frame: UIScreen.main.bounds)
+//        window?.rootViewController = navController
+//        window?.makeKeyAndVisible()
+//    }
+    
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
