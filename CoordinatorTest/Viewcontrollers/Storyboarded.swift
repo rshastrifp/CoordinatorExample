@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 protocol Storyboarded {
-    func instantiat() -> Self
+    func instantiate() -> Self
 }
 
 extension Storyboarded where Self: UIViewController {
@@ -20,7 +20,6 @@ extension Storyboarded where Self: UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         
         return storyboard.instantiateViewController(withIdentifier: String(className)) as! Self
-        
     }
 }
 

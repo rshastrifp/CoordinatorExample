@@ -22,7 +22,7 @@ class MainCoordinator: Coordinator {
         vc.mainCoordinator = self
         navigationController.pushViewController(vc, animated: false)
     }
-    
+
     func goToLogIn() {
         let vc = LoginVc.instantiate()
         vc.mainCoordinator = self

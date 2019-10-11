@@ -11,7 +11,7 @@ import UIKit
 class DashboardVc: UIViewController, Storyboarded {
     var mainCoordinator : MainCoordinator?
     
-    func instantiat() -> Self {
+    func instantiate() -> Self {
         return self
     }
     

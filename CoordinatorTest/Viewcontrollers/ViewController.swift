@@ -12,7 +12,7 @@ class ViewController: UIViewController, Storyboarded {
     
     var mainCoordinator : MainCoordinator?
 
-    func instantiat() -> Self {
+    func instantiate() -> Self {
         return self
     }
     
